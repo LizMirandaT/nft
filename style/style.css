@@ -1,0 +1,97 @@
+:root{
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --Very-dark-blue-main-BG: hsl(217, 54%, 11%);
+    --Very-dark-blue-card-BG: hsl(216, 50%, 16%);
+    --Very-dark-blue-line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+    --Font-size: 18px;
+}
+html,
+body{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-family: 'Outfit', sans-serif;
+}
+body{
+    background-color: var(--Very-dark-blue-main-BG);
+    height: 100vh;
+    display: flex;
+}
+.card{
+    background-color: var(--Very-dark-blue-card-BG);
+    border-radius: 12px;
+    width: 70%;
+    height: 68%;
+    margin-left: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+    overflow: hidden;
+}
+.card-top img{
+    width: 85%;
+    height: 85%;
+    border-radius: 12px;
+    position:relative;
+    margin-top: 20px;
+    left: 16px;
+}
+.card-bottom{
+    margin-left: 16px;
+}
+.card-bottom p{
+    color: var(--White);
+    font-size: var(--Font-size);
+    font-weight: 600;
+}
+.card-bottom p2{
+    color: var(--Soft-blue);
+    font-size: 14px;
+    font-weight: 300;
+}
+.card-bottom-datos{
+    margin-left: 16px;
+    margin-top: 12px;
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+}
+.card-bottom-datos-ethereum{
+    color:var(--Cyan);
+    font-weight: 600;
+    margin-right: 55px;   
+}
+.card-bottom-datos-clock{
+    color:var(--Soft-blue);
+    font-weight: 600;
+}
+.card-bottom-datos-ethereum img{
+    margin: 0 auto;
+}
+.card-bottom-datos-clock img{
+    margin: 0 auto;
+}
+.card-bottom-nombre{
+    border-top: 2px solid var(--Very-dark-blue-line);
+    margin-top: 14px;
+    display: flex;
+    align-items: center;
+}
+.card-bottom-nombre img{
+    width: 12%;
+    border-color: var(--White);
+    border-radius: 50%;
+    border: 1px solid white;
+    margin-left: 16px;
+    margin-right: 20px;
+    margin-top: 12px;
+}
+.card-bottom-nombre >div span:nth-child(1){
+    color: var(--Soft-blue);
+    font-weight: 400;
+}
+.card-bottom-nombre >div span:nth-child(2){
+    color: var(--White);
+    font-weight: 400;
+}
